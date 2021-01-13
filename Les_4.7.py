@@ -9,10 +9,11 @@
 
 def fact(n):
 
-   factorial = 1
-   while factorial <= n:
-        yield factorial
-        factorial += 1
+     cnt = 1
+   while n >= 1:
+        cnt = cnt * n
+        n = n - 1
+        yield cnt
 
 i = 1
 my_fuct = []
